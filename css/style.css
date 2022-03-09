@@ -1,4 +1,100 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.fa {
+  color: white;
+}
+/* sub header */
+.sub-header > ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 0.25;
+  background-color: #3E3E3E;
+  color: white;
+}
+.sub-header-fb-logo {
+  width: 1rem;
+  height: 1rem;
+}
+.sub-header-tw-logo {
+  width: 1rem;
+  height: 1rem;
+}
+.main-header >ul {
+  display: flex;
+}
+
+/* main header */
+.main-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-header-logo {
+  justify-self: flex-start;
+  order: 1;
+  width: 3rem;
+}
+.main-header-hamburger {
+  align-self: flex-start;
+}
+.bar {
+  height: 0.25rem;
+  width: 1.5rem;
+  border: 0.15rem solid #535353;
+  background-color: #535353;
+  margin-top: 0.15rem;
+  border-radius: 0.15rem;
+}
+/* main program section */
+.main-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5%;
+  background-color: #272A31;
+  background-image: url("/assets/images/pattern.png");
+  background-size: 7%;
+  justify-items: center;
+}
+.main-program-title {
+  color: white;
+  padding-top: 2.5rem;
+}
+.main-program-underline {
+  width: 3rem;
+  height: 0.25rem;
+  background-color: #EC5242;
+  justify-self: center;
+  margin-top: 1rem;
+}
+.main-program-sections {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color:rgba(54, 54, 54, 0.5);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.main-program-sections-logo {
+  width: 20%;
+}
+.main-program-sections-title {
+  color: #EC5242 ;
+}
+.main-program-sections-desc {
+  color: white;
+}
+.main-program-footer {
+  display: none;
 }
