@@ -7,51 +7,15 @@
     <meta name="keywords" content="HTML, CSS, Javascript">
     <meta name="author" content="Maen Kh">
     <title>Global Warmming</title>
+    <link href="http://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+    <script src="components/header.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="sub-header">
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a  href="#">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </li>
-                <li><div class="sub-header-link">English</div></li>
-                <li><div class="sub-header-link">My Page</div></li>
-                <li><div class="sub-header-link">Logout</div></li>
-            </ul>
-        </div>
-        <div class="main-header">
-            <img class="main-header-logo logo" src="/assets/icon/logo.png" alt="logo" >
-            
-            <a class="main-header-menu" href="#">About</a>
-                <a class="main-header-menu" href="#">Program</a>
-                <a class="main-header-menu" href="#">Join</a>       
-                <a class="main-header-menu" href="#">Sponsor</a>
-                <a class="main-header-menu" href="#">News</a>
-                <a class="main-header-menu" href="#">CC Campaign</a>
-                        
-        </div>
-    </header>
+    <header-component></header-component>
     <main class="main-section">
-        <a class="hamburger-btn" href="#">
-            <div class="main-header-hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </a>
-        <h1 class="main-section-title">"Hello! Green World"</h1>
-        <h2 class="main-section-subtitle">SAVING WORLD IS EVERYBODY RESPONSIBILITY</h2>
+        <h2 class="main-section-subtitle ">SAVING WORLD IS EVERYBODY RESPONSIBILITY</h2>
         <span class="main-section-desc">It is clear that climate change is an all encompassing challenge, impacting all spheres of life and every region of the world. Even with the commitments made at COP26 to phase down coal, cut methane emissions and halt deforestation, some reports suggest the world is still on track for 2.4C of warming by 2030. </span>
         <div class="main-section-date">
             <h2>8 - 10 March 2022</h2>
@@ -66,33 +30,36 @@
         <div class="main-program-underline"></div>
         <ul>
             <li class="main-program-sections">
-                <img class="main-program-sections-logo" src="/assets/images/lecture.png" alt="">
+                <img class="main-program-sections-logo" src="/assets/images/lecture.svg" alt="lecture">
                 <h3 class="main-program-sections-title">Lecture</h3>
                 <div class="main-program-sections-desc">Listen to the speakers from various countries about the message of sharing and opening.</div>
             </li>
             <li class="main-program-sections">
-                <img class="main-program-sections-logo" src="/assets/images/tv-show.png" alt="">
+                <img class="main-program-sections-logo" src="/assets/images/exhibition.svg" alt="exhibition">
                 <h3 class="main-program-sections-title">CC Exhibiti</h3>
                 <div class="main-program-sections-desc">Appreciate various creations applying CC license of artists, organized from Art Center Nabi.</div>
             </li>
             <li class="main-program-sections">
-                <img class="main-program-sections-logo" src="/assets/images/chat-balloons.png" alt="">
+                <img class="main-program-sections-logo" src="/assets/images/fourms.svg" alt="fourms">
                 <h3 class="main-program-sections-title">Forum</h3>
                 <div class="main-program-sections-desc">Have the time to share your thoughts and opinion with experts on each topic.</div>
             </li>
             <li class="main-program-sections">
-                <img class="main-program-sections-logo" src="/assets/images/training.png" alt="">
+                <img class="main-program-sections-logo" src="/assets/images/workshop.svg" alt="workshop">
                 <h3 class="main-program-sections-title">Workshop</h3>
                 <div class="main-program-sections-desc">Try creating your own work using an open-source license rather than just watching.</div>
             </li>
             <li class="main-program-sections">
-                <img class="main-program-sections-logo" src="/assets/images/circles.png" alt="">
+                <img class="main-program-sections-logo" src="/assets/images/lgnite.svg" alt="lginte">
                 <h3 class="main-program-sections-title">CC lgnite</h3>
                 <div class="main-program-sections-desc">Get opportunities to network with CC affiliates around the world, also after the summit.</div>
             </li>
         </ul>
-        <div class="main-program-footer">
+        <div class="main-program-dt-footer">
             <a href="#"><h2>SEE THE WHOLE PROGRAM</h2></a>
+        </div>
+        <div class="main-program-mb-footer">
+            <a href="#">Join Global Summit 2022</a>
         </div>
     </section>
     <section class="feature-speaker">
@@ -120,5 +87,6 @@
     </footer>
 
     <script src="/js/javascript.js"></script>
+    <script src="/JS/hamburger.js"></script>
 </body>
 </html>
