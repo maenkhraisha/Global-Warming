@@ -13,7 +13,13 @@
   ul {
     list-style-type: none;
   }
-
+/* header */
+.main-header-menu:nth-child(1){
+  color: #F49D8E;
+}
+.main-header-menu:nth-child(2){
+  color: #535353!important;
+}
   /* main section */
   .main-section {
       display: flex;
@@ -35,6 +41,7 @@
   }
   
   .btn-hamburger {
+      display: flex;
       align-self: flex-start;
   }
   .hambuger-menu {
@@ -124,4 +131,10 @@
     left: 50%;
     font-weight: bold;
     transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 768px) {
+    .btn-hamburger{
+      display: none;
+    }
   }

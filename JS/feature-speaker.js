@@ -45,9 +45,12 @@ FSHeader.innerText = 'Featured Speakers';
 
 const FSUnderline = document.createElement('div');
 FSUnderline.className = 'feature-speaker-underline';
+const FSItemContainer = document.createElement('div');
+FSItemContainer.className = 'feature-speaker-items-container';
 
 FSSection.appendChild(FSHeader);
 FSSection.appendChild(FSUnderline);
+FSSection.appendChild(FSItemContainer);
 
 let FSItemDiv;
 let FSImgDiv;
@@ -85,7 +88,7 @@ function createElements() {
 }
 
 function appendElements() {
-  FSSection.appendChild(FSItemDiv);
+  FSItemContainer.appendChild(FSItemDiv);
   FSItemDiv.appendChild(FSImgDiv);
   FSImgDiv.appendChild(FSImage);
   FSItemDiv.appendChild(FSDescDiv);
