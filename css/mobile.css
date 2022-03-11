@@ -280,14 +280,13 @@ a {
 }
 
 .footer-title {
-color: white;
+  color: white;
 }
 
 .footer-underline {
   height: 2px;
   width: 35px;
   background-color: #ec5242;
-  
 }
 
 .footer-main > ul {
@@ -305,13 +304,13 @@ color: white;
   display: flex;
   justify-content: center;
   gap: 1rem;
- 
   padding: 1rem var(--mobile-global-padding);
 }
+
 .footer-sub > h1 {
   font-size: 1.5rem;
 }
+
 .footer-sub > div {
   color: #272a3170;
 }
-
