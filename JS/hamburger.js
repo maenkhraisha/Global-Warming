@@ -1,5 +1,5 @@
 const btnHumburger = document.querySelector('.btn-hamburger');
-const hamMenu = document.querySelector('.hambuger-menu');
+const hamMenu = document.querySelector('.hamburger-menu');
 
 btnHumburger.addEventListener('click', () => {
   if (hamMenu.style.display === 'flex') {

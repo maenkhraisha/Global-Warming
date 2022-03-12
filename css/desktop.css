@@ -1,5 +1,6 @@
 :root {
-  --desktop-padding: 15%;
+  --desktop-padding: 15%; 
+  --bg-color: #F8F8F8;
 }
 
 @media screen and (min-width: 768px) {
@@ -9,32 +10,62 @@
     flex-direction: column;
   }
 
+  .main-section-subtitle{
+    font-size: 3.5rem;
+  }
   .sub-header > ul {
     padding-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: #3e3e3e;
+    color: white;
   }
 
-  .main-header-hamburger {
-    display: none;
+  .sub-header-fb-logo {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .sub-header-tw-logo {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* main header */
+  .main-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .main-header {
     display: flex;
-    justify-content: flex-start;
-    padding: 1rem 20%;
+    padding: 0.4rem 0;
     align-items: center;
   }
-
-  .main-header > a {
-    margin-left: 5%;
+  .main-header > ul {
+    display: flex;
+    flex: 3;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 5%;
   }
 
-  .main-header-menu {
-    color: #535353;
-    margin-right: 1rem;
+  .main-header-logo {
+    flex: 2;
+  }
+
+  .main-header-logo > img {
+    width: 30%;
+    margin-left: 50%;
   }
 
   .main-header-menu:nth-child(2) {
     color: #f49d8e;
+  }
+  .main-header-menu:nth-child(1) {
+    color: #535353;
   }
 
   .main-header-menu:last-child {
@@ -44,12 +75,10 @@
     padding: 0.25rem 1rem;
   }
 
-  .main-header-logo {
-    margin-right: 25%;
-  }
 
-  .main-header-logo > img {
-    width: 70px;
+  /* hamburger menu */
+  .main-header-hamburger {
+    display: none;
   }
 
   /* main program */
@@ -97,5 +126,7 @@
   /* footer */
   .footer-sub {
     padding: 2rem var(--desktop-padding);
+    background-color: var(--bg-color);
+    
   }
 }

@@ -14,10 +14,10 @@ class footer extends HTMLElement {
         </ul>
     </div>
     <div class="footer-sub">
-        <h1>creative common korea</h1>
+        <img src="/assets/images/footer-logo.png" alt="footer logo">
         <div>
           <p>2015 creative commons korea. Some right Reserved</p>
-          <p>Accusantium consectetur quibusdam rem, provident quae nobis nam iusto quisquam nulla quas quod quis doloremque natus ex a accusamus maiores eaque omnis magni et earum nostrum? Velit natus corporis placeat necessitatibus fugit officia quia ex? Accusantium alias in impedit, eius voluptate assumenda?</p>
+          <p>ex a accusamus maiores eaque omnis magni et earum nostrum? Velit natus corporis placeat necessitatibus fugit officia quia ex? Accusantium alias in impedit, eius voluptate assumenda?</p>
         </div>
         
     </div>
