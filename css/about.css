@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --mobile-global-padding: 5%;
+  --fontText: normal 1.5rem verdana, arial, lato;
+  --fontTile: bold 2rem verdana, arial, roboto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* header */
+
+/* main section */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem var(--mobile-global-padding);
+  background-image: url("/assets/images/bg-mobile.png");
+}
+
+.bar {
+  height: 0.5rem;
+  width: 3rem;
+  background-color: #535353;
+  margin-top: 0.5rem;
+}
+
+.main-header-hamburger {
+  margin-top: 2rem;
+  align-self: flex-start;
+}
+
+.btn-hamburger {
+  display: flex;
+  align-self: flex-start;
+}
+
+.ham-menu-link {
+  color: #535353;
+}
+
+.hambuger-menu {
+  margin-top: 2rem;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.main-section-title {
+  padding-top: 6rem;
+  color: #f93f2d;
+  font: var(--fontText);
+}
+
+.main-section-text {
+  text-align: center;
+}
+
+.main-section-footer {
+  color: #909090;
+  text-align: center;
+}
+
+/* common section */
+.common-section {
+  padding: 3rem var(--mobile-global-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.common-section-title {
+  color: #474747;
+}
+
+.common-section-text {
+  margin-top: 1rem;
+  color: #909090;
+}
+
+.common-section-footer {
+  color: #909090;
+}
+
+.common-section-logo {
+  margin-top: 1rem;
+  width: 50%;
+  border: 1px solid lightgray;
+}
+
+/* history section */
+.history-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem var(--mobile-global-padding);
+}
+
+.history-section-title {
+  margin-top: 1rem;
+  color: #474747;
+}
+
+.history-section-text {
+  margin-top: 1rem;
+  text-align: center;
+  color: #909090;
+}
+
+.history-img-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.history-img-section > div > img {
+  width: 90vw;
+  height: 100%;
+}
+
+.history-img-section > div {
+  position: relative;
+  color: white;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.history-img-section > div::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(228, 40, 15, 0.774);
+}
+
+.text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+
+/* footer sub */
+.footer-sub-about {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem var(--mobile-global-padding);
+}
+
+.footer-sub-about-img {
+  width: 20%;
+}
+
+.footer-sub-about > div > p {
+  color: #2b2829;
+  margin-top: 0.75rem;
+}
+
+.footer-about {
+  padding: 0 var(--mobile-global-padding);
+}
+
+.footer-main-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding-top: 2rem;
+  background-color: #272a31;
+}
+
+.footer-title-about {
+  color: white;
+}
+
+.footer-underline-about {
+  height: 2px;
+  width: 35px;
+  background-color: #ec5242;
+}
+
+.footer-main-about > ul {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-main-about > ul > li {
+  color: #535353;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main-header-menu:nth-child(2) {
+    color: #535353;
+  }
+
+  .main-header-menu:nth-child(1) {
+    color: #f49d8e;
+  }
+
+  .btn-hamburger {
+    display: none;
+  }
+
+  .history-img-section {
+    flex-direction: row;
+  }
+
+  .history-img-section > div > img {
+    width: 30vw;
+  }
+
+  .main-section-title-about {
+    padding-top: 6rem;
+    color: #ec5242;
+    font: var(--fontTile);
+  }
+
+  .main-section-text {
+    color: #909090;
+    margin: 2rem 0;
+    background-color: white;
+    padding: 2rem 0.25rem;
+  }
+
+  .main-section-footer {
+    margin-bottom: 1rem;
+  }
+
+  .footer-main-about {
+    display: none;
+  }
+
+  .footer-sub-about {
+    background-color: #272a31;
+  }
+
+  .footer-sub-about-img {
+    content: url("/assets/images/footer-logo-about.png");
+  }
+
+  .footer-sub-about > div > p {
+    color: white;
+  }
+}

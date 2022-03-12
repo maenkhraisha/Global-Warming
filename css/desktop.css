@@ -1,0 +1,134 @@
+:root {
+  --desktop-padding: 15%;
+  --bg-color: #f8f8f8;
+}
+
+@media screen and (min-width: 768px) {
+  /* header */
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-section-subtitle {
+    font-size: 3.5rem;
+  }
+
+  .sub-header > ul {
+    padding-right: 5%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: #3e3e3e;
+    color: white;
+  }
+
+  .sub-header-fb-logo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .sub-header-tw-logo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  /* main header */
+  .main-header {
+    display: flex;
+    justify-content: center;
+    padding: 0.4rem 0;
+    width: 100%;
+  }
+
+  .main-header > ul {
+    display: flex;
+    flex: 3;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 5%;
+  }
+
+  .main-header-logo {
+    flex: 2;
+  }
+
+  .main-header-logo > img {
+    width: 30%;
+    margin-left: 50%;
+  }
+
+  .main-header-menu:nth-child(2) {
+    color: #f49d8e;
+  }
+
+  .main-header-menu:nth-child(1) {
+    color: #535353;
+  }
+
+  .main-header-menu:last-child {
+    border: 4px solid red;
+    color: #f49d8e;
+    white-space: nowrap;
+    padding: 0.25rem 1rem;
+  }
+
+  /* hamburger menu */
+  .main-header-hamburger {
+    display: none;
+  }
+
+  /* main program */
+  .main-program {
+    padding-bottom: 2rem;
+  }
+
+  .main-program > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .main-program-sections {
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+  }
+
+  .main-program-sections:hover {
+    border: 1px solid  white;
+    transform: scale(1.05);
+  }
+
+  .main-program-mb-footer {
+    display: none;
+  }
+
+  .main-program-dt-footer {
+    margin: 3rem 0;
+    display: block;
+    text-decoration: underline;
+  }
+
+  .main-program-dt-footer > a {
+    color: white;
+  }
+
+  /* feature speaker */
+  .feature-speaker-items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .feature-speaker-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* footer */
+  .footer-sub {
+    padding: 2rem var(--desktop-padding);
+    background-color: var(--bg-color);
+  }
+}
