@@ -1,6 +1,6 @@
 :root {
-  --desktop-padding: 15%; 
-  --bg-color: #F8F8F8;
+  --desktop-padding: 15%;
+  --bg-color: #f8f8f8;
 }
 
 @media screen and (min-width: 768px) {
@@ -10,9 +10,10 @@
     flex-direction: column;
   }
 
-  .main-section-subtitle{
+  .main-section-subtitle {
     font-size: 3.5rem;
   }
+
   .sub-header > ul {
     padding-right: 5%;
     display: flex;
@@ -26,24 +27,20 @@
     width: 1rem;
     height: 1rem;
   }
-  
+
   .sub-header-tw-logo {
     width: 1rem;
     height: 1rem;
   }
-  
+
   /* main header */
   .main-header {
     display: flex;
     justify-content: center;
+    padding: 0.4rem 0;
     width: 100%;
   }
 
-  .main-header {
-    display: flex;
-    padding: 0.4rem 0;
-    align-items: center;
-  }
   .main-header > ul {
     display: flex;
     flex: 3;
@@ -64,6 +61,7 @@
   .main-header-menu:nth-child(2) {
     color: #f49d8e;
   }
+
   .main-header-menu:nth-child(1) {
     color: #535353;
   }
@@ -127,6 +125,5 @@
   .footer-sub {
     padding: 2rem var(--desktop-padding);
     background-color: var(--bg-color);
-    
   }
 }

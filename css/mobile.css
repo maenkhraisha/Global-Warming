@@ -4,7 +4,7 @@
   --mobile-global-padding: 5%;
   --fontText: normal 1.5rem verdana, arial, lato;
   --fontTile: bold 2rem verdana, arial, roboto;
-  --bg-color: #F8F8F8;
+  --bg-color: #f8f8f8;
 }
 
 * {
@@ -12,7 +12,8 @@
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   background-color: var(--bg-color);
 }
 
@@ -44,6 +45,7 @@ a {
 .main-header-hamburger {
   margin-top: 2rem;
 }
+
 .ham-menu-link {
   color: #535353;
 }
@@ -54,8 +56,6 @@ a {
   flex-direction: column;
   gap: 2rem;
   font-size: 2rem;
-}
-.hamburger-menu {
   text-align: center;
 }
 
@@ -243,7 +243,6 @@ a {
 /* footer */
 .footer {
   padding: 0 var(--mobile-global-padding);
-
 }
 
 .footer-main {
@@ -270,7 +269,7 @@ a {
   gap: 1rem;
   margin: 1rem 0;
   flex-wrap: wrap;
-  justify-content: center
+  justify-content: center;
 }
 
 .footer-main > ul > li {
@@ -289,8 +288,7 @@ a {
   width: 20%;
 }
 
-.footer-sub > div >p {
-  color: #2B2829;
+.footer-sub > div > p {
+  color: #2b2829;
   margin-top: 0.75rem;
 }
-
