@@ -114,10 +114,7 @@ a {
   background-image: url("/assets/images/pattern.png");
   background-size: 7%;
   justify-items: center;
-  
-  
 }
-
 
 .main-program-title {
   color: white;
@@ -176,7 +173,6 @@ a {
   align-items: center;
   padding: 0 var(--mobile-global-padding);
   margin: 5rem 0;
-  
 }
 
 .feature-speaker-header {

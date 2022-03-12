@@ -77,7 +77,7 @@
   .main-header-hamburger {
     display: none;
   }
-  
+
 
   /* main program */
   .main-program {
@@ -95,10 +95,12 @@
     flex-direction: column;
     transition: all 1s;
   }
-  .main-program-sections:hover{
+
+  .main-program-sections:hover {
     border: 1px solid  white;
     transform: scale(1.05);
   }
+
   .main-program-mb-footer {
     display: none;
   }
